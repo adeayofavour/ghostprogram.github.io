@@ -1,0 +1,137 @@
+@import url('https://fonts.google.com/specimen/Outfit');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card{
+    width: 16rem;
+    background-color: #14253d;
+    padding: 1rem;
+    border: 1px solid #14253d;
+    border-radius: 15px;
+    font-family: 'outfit', sans-serif;
+    box-shadow: 0 20px 25px 15px rgba(0, 0, 0, 0.05),
+                0 40px 30px 15px rgba(0, 0, 0, 0.1);                
+}
+
+.card-head-text h1{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'outfit', sans-serif;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.card-head-text h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card-head-text p{
+    font-weight: 300;
+    font-size: 14px;
+    padding-bottom: .95rem;
+    color: #8BACD9;
+}
+
+.card-img{
+    position: relative;
+    border-radius: .75rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-img::after{
+    
+    
+    content: url(./images/icon-view.svg);
+    background: hsla(178, 100%, 50%, 0.5);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.card-img:hover::after{
+    opacity: 1;
+}
+
+.card-img img{
+    width: 100%;
+    display: block;
+}
+
+.svg-img{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.svg-img p{
+    text-align: left;
+}
+
+.col-1{
+   display: inline-flex;
+   padding-right: 1rem;
+}
+
+.col-2{
+    display: inline-flex;
+}
+
+.col-2 p{
+    font-size: 13px;
+    font-weight: 300;
+    color: #8BACD9;
+}
+
+.eth-text{
+    color: hsl(178, 100%, 50%);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.card-foot{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.card-foot p{
+    font-size: 13px;
+    font-weight: 300;
+    color: #8BACD9;
+}
+
+.card-foot p span{
+    color: #fff;
+}
+
+.card-foot p span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card-foot img{
+    border-radius: 50%;
+    width: 15%;
+    padding-right: 10px;
+}
